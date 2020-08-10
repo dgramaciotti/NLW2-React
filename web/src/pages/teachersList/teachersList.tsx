@@ -5,6 +5,7 @@ import TeacherCard, {Teacher} from '../../components/teacherCard/index';
 import Input from '../../components/input/index';
 import Select from '../../components/inputSelect/index';
 import api from '../../services/api';
+//Teachers list component
 export default () => {
   const [subject, setSubject] = useState('');
   const [week_day,setWeek_day] = useState('');
