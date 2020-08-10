@@ -1,0 +1,55 @@
+#page-teacher-list{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+#search-teacher{
+    margin-top: 3.2rem;
+}
+#search-teacher > label{
+    color: var(--color-text-in-primary);
+}
+#search{
+    width: 20rem;
+    height: 5.6rem;
+    width:100%;
+    background-color: var(--color-secondary);
+    color: var(--color-button-text);
+    border:0;
+    border-radius:0.8rem;
+    cursor: pointer;
+    font: 700 1.6rem Arquivo;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: background-color 0.2s;
+    outline:none;
+}
+.button-block{
+    display:flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+#search:hover{
+    background: var(--color-secondary-dark);
+}
+
+@media(min-width: 700px){
+    #page-teacher-list{
+        width:100%;
+    }
+    #search-teacher{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 16px;
+        position: absolute;
+        bottom: -30px;
+    }
+    #search-teacher .select-block + .select-block{
+        margin-top: 0;
+    }
+    .button-block{
+        margin-top: 1.3rem;
+    }
+}
