@@ -3,7 +3,7 @@ import './styles.css';
 
 interface inputProps extends InputHTMLAttributes<HTMLInputElement>{
     label:string;
-    text:string;
+    text?:string;
 }
 
 const Input:React.FC<inputProps> = ({label,text,...rest}) => {
