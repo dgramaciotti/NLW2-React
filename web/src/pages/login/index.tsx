@@ -1,21 +1,21 @@
 import React from "react";
 
 import "./styles.css";
-import logoImg from "../../assets/images/logo.svg";
 import Input from '../../components/input/index';
 import heart from '../../assets/images/icons/purple-heart.svg';
+import ScreenArt from '../../components/screenArt/index';
+import {Link} from 'react-router-dom';
 const login: React.FC = () => {
   return (
     <div id="page-login">
-      <div className="screen-art">
-        <img src={logoImg} />
-        <strong>Sua plataforma de estudos online</strong>
-      </div>
+      <ScreenArt></ScreenArt>
       <div className="login-area">
-        <div>
+        <div className="login-block">
           <div className="login-header">
-            <strong>Fazer login</strong>
-            <button>Criar uma conta</button>
+            <strong>Fazer login</strong>´
+            <Link to="/signup">
+              <button>Criar uma conta</button>
+            </Link>
           </div>
           <Input label="e-mail" text="" placeholder="E-mail"></Input>
           <Input label="password" text="" placeholder="Senha"></Input>
@@ -26,14 +26,16 @@ const login: React.FC = () => {
             <button id="forgot-pass">Esqueci minha senha</button>
           </div>
           <button id="submit">Entrar</button>
-          <div className="web-footer">
+        </div>
+        <div className="web-footer">
               <div className="web-footer-line">
                   <strong>Não tem conta?</strong>
-                  <div>É de graça <img src={heart}/></div>
+                  <div>É de graça<img src={heart}/></div>
               </div>
-              <button>Cadastre-se</button>
+              <Link to="/signup">
+                <button>Cadastre-se</button>
+              </Link>
           </div>
-        </div>
       </div>
     </div>
   );

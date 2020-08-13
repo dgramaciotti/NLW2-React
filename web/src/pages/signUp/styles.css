@@ -1,0 +1,65 @@
+.signup-page {
+  width: 100vw;
+  height: 100vh;
+  color: var(--color-text-in-primary);
+  background: var(--color-primary);
+}
+.signup-page .screen-art {
+  height: 30vh;
+  background-size: contain;
+}
+
+.signup-page .signup-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  background-color: var(--color-background);
+}
+.signup-block {
+  min-width: 250px;
+  max-width: 270px;
+  margin-top: 1.6rem;
+}
+.signup-block strong {
+  font: 700 2.5rem Poppins;
+  color: var(--color-text-title);
+}
+.signup-block .fill-data {
+  color: var(--color-text-complement);
+  margin: 1.6rem 0 2.2rem;
+  font: 400 1.6rem Archivo;
+}
+.signup-area .finish-button {
+  width: 100%;
+  height: 4.8rem;
+  border-radius: 0.8rem;
+  font: 400 1.6rem Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: var(--color-secondary);
+  color: var(--color-button-text);
+  transition: background-color 0.2s;
+  margin-top: 2.6rem;
+}
+.signup-area .finish-button:hover {
+  background: var(--color-secondary-dark);
+}
+
+@media(min-width:700px){
+    .signup-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .signup-page .screen-art, .signup-page .signup-area{
+        height:100vh;
+    }
+    .signup-block{
+        min-width: 270px;
+        max-width: 600px;
+    }
+}

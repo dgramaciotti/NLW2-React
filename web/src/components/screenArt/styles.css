@@ -1,0 +1,25 @@
+.screen-art {
+  background-image: url("../../assets/images/background.svg");
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.screen-art > img {
+  height: 7.5rem;
+  margin-bottom: 1.6rem;
+}
+.screen-art > strong {
+  max-width: 250px;
+  font: 700 2rem Poppins;
+}
+
+@media (min-width: 700px) {
+    .screen-art{
+      height: 100vh;
+    }
+    .screen-art {
+      background-size: cover;
+    }
+}
