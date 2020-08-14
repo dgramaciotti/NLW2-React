@@ -1,0 +1,64 @@
+.forgotPass-page{
+    background: var(--color-primary);
+    width:100vw;
+    height:100vh;
+    color: var(--color-text-in-primary);
+}
+.forgotPass-area{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:50vh;
+    background: var(--color-background);
+}
+.forgotPass-form{
+    display:flex;
+    flex-direction: column;
+}
+.forgotPass-form strong{
+    font: 700 2.5rem Poppins;
+    color: var(--color-text-title);
+}
+.forgotPass-form div{
+    font: 400 1.6rem Poppins;
+    color: var(--color-text-base);
+    line-height: 2.2rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+.forgotPass-form a{
+    text-decoration: none;
+}
+.forgotPass-form button {
+    width: 100%;
+    height: 4.8rem;
+    border-radius: 0.8rem;
+    font: 400 1.6rem Poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    transition: background-color 0.2s;
+    margin-top: 1.6rem;
+}
+.forgotPass-form button:hover {
+background: var(--color-secondary-dark);
+}
+
+@media(min-width:700px){
+    .forgotPass-page{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "form screen-art";
+    }
+    .forgotPass-page .screen-art{
+        grid-area:screen-art;
+    }
+    .forgotPass-area{
+        grid-area:form;
+        height:100vh;
+    }
+}

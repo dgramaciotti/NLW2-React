@@ -23,7 +23,9 @@ const login: React.FC = () => {
             <div id="remember-text"> 
                 <input type="checkbox" />Lembrar-me
             </div>
-            <button id="forgot-pass">Esqueci minha senha</button>
+            <Link to="/forgot-my-pass">
+              <button id="forgot-pass">Esqueci minha senha</button>
+            </Link>
           </div>
           <button id="submit">Entrar</button>
         </div>
