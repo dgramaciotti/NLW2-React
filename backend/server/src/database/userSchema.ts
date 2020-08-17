@@ -1,17 +1,18 @@
 import mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-    name: {type:String, required:true},
-    photoLink:{type:String, required:true},
-    whatsappNumber:{type:Number, required:true},
-    biografy:{type:String, required:true},
-    class:{type:String,required:true}, 
-    cost:{type:Number,required:true}, 
+    name: {type:String},
+    photoLink:{type:String},
+    whatsappNumber:{type:Number},
+    biografy:{type:String},
+    class:{type:String}, 
+    cost:{type:Number}, 
     availableTimes:[{
         week_day:String,
         from:String,
         to:String
-    }]
+    }],
+    _id:{type:mongoose.Schema.Types.ObjectId, ref:"UserCredential",required:true},
 });
 
 

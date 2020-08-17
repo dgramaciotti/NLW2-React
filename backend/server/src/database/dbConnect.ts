@@ -1,5 +1,5 @@
 import mongoose = require('mongoose');
-const URI:string = 'mongodb://localhost:27017';
+const URI:string = 'mongodb://localhost:27017/proffy';
 
 export default () => {mongoose.connect(URI,{useNewUrlParser:true, useUnifiedTopology:true},(err)=>{
     if(err){
